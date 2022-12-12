@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet2.css">
+    <link rel="stylesheet" href="stylesheet2,5.css">
+    <link rel="stylesheet" href="stylesheet2,6.css">
+    <link rel="stylesheet" href="stylesheet2,7.css">
+    <link rel="stylesheet" href="stylesheet,0.css">
+
+
+    <title>Fomi</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylsheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script>
+        setTimeout(wakeUpUser, 5000);
+
+        function wakeUpUser() {
+            swal({
+                title: "Plz read this!!",
+                text: "Plz note: That it's a free devlivery when you purchase any 2 or more items only in Soweto. You also going to get 20% discount!! ",
+                button: "Ok",
+                icon: "warning",
+
+            });
+
+        }
+    </script>
+
+    <script>
+        function fun1() {
+
+            swal({
+                title: "Good job!",
+                text: "You clicked the button!",
+                icon: "success",
+                button: "click add cart",
+            });
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="Section_top">
+        <div class="content">
+            <h1>fear <span>of</span> missin <span> it </span></h1>
+        </div>
+    </div>
+
+
+    <center>
+
+        <div class="container">
+            <a href="index.html"><span>Home</span></a>
+            <a href="about.html"><span>About</span></a>
+            <a href="test.html"><span>Market</span></a>
+            <a href="contact.html"><span>Contact</span></a>
+        </div>
+
+
+        <h2 data-text="FOMi">FOMi</h2>
+        <button class="button" onclick="fun1()">
+
+            <a href="test.html">
+                <span>Add an order</span>
+                <div class="cart">
+                    <svg viewbox="0 0 36 26">
+                        <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
+                        <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                </div>
+            </a>
+        </button>
+
+    </center>
+
+    <script>
+        const marker = document.querySelector('#marker');
+        const item = document.querySelectorAll('ul li a');
+
+        function indication(e) {
+            marker.style.top = e.offsetTop + "px";
+            marker.style.width = e.offsetWidth + "px";
+        }
+
+        item.forEach(link => {
+            link.addEventListener('click', (e) => {
+                indicator(e.target);
+            });
+        });
+    </script>
+    <script type="type/javascript" src="home.js/sweertalert.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

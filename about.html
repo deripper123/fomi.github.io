@@ -1,0 +1,127 @@
+<!DOCTYPE htm>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="stylesheet4,0.css">
+    <link rel="stylesheet" href="stylesheet4,40.css">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script>
+        setTimeout(wakeUpUser, 5000);
+
+        function wakeUpUser() {
+            swal({
+                title: "Plz read this!!",
+                text: "Plz note: That it's a free devlivery when you purchase any 2 or more items only in Soweto. You also going to get 20% discount!!",
+                button: "Ok",
+                icon: "warning",
+
+            });
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="button1">
+        <a href="index.html">Home</a>
+    </div>
+
+
+
+    <div class="Section_top">
+        <div class="content"></div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="card animate-on-scroll">
+            <div class="content">
+                <h2>01</h2>
+                <h3>Card One</h3>
+                <p>Wellcome to our webpage. I hope we will deliver the value that you are looking for.</p>
+                <a href="https://wa.me/+27677035125" onclick="fun()">Read More</a>
+            </div>
+        </div>
+        <div class="card animate-on-scroll">
+            <div class="content">
+                <h2>02</h2>
+                <h3>Card Two</h3>
+                <p>If you need help also to promot your product or service you can contact us.</p>
+                <a href="https://wa.me/+27677035125" onclick="fun()">Read More</a>
+            </div>
+        </div>
+        <div class="card animate-on-scroll">
+            <div class="content">
+                <h2>03</h2>
+                <h3>Card Three</h3>
+                <p>You can communicate with us if you have better ideas to improve our webpage we would like your feedback.</p>
+                <a href="contact.html" onclick="fun()">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="button">
+            <a target="_blank" href="https://www.twitter.com/Thabangphiri art/">
+                <div class="icon"><i class="fa fa-twitter front"></i>
+                    <span>Tiwetter</span>
+                </div>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/fomo/">
+                <div class="icon"><i class="fa fa-facebook front"></i>
+                    <span>Facebook</span>
+                </div>
+            </a>
+            <a target="_blank" href="https://www.Instagram.com/fomo_openmarket/">
+                <div class="icon"><i class="fa fa-instagram front"></i>
+                    <span>Instagram</span>
+                </div>
+            </a>
+            <a target="_blank" href="https://wa.me/+27677035125">
+                <div class="icon"><i class="fa fa-whatsapp front"></i>
+                    <span>Whatsapp</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script type="text/javascript" src="sweert.js/sweert.min.js"></script>
+    <script type="text/javascript" src="main1.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+
+    <script>
+        const animation_elements = document.querySelectorAll('.animate-on-scroll');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                } else {
+                    entry.target.classList.remove('animate');
+                }
+            })
+        }, {
+            threshold: 0.5
+        });
+
+        for (let i = 0; i < animation_elements.length; i++) {
+            const el = animation_elements[i];
+
+            observer.observe(el);
+        }
+    </script>
+</body>
+
+</html>

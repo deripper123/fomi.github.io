@@ -1,0 +1,37 @@
+.search {
+    padding: 4px;
+    color: #eee;
+    background: none;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+}
+.search :is(input, button) {
+    color: inherit;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.search:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.search__input {
+    width: 0;
+    transition: width .5s;
+}
+.search__btn {
+    width: 25px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.search:focus-within input {
+    width: 200px;
+    height: 100px;
+}
+::placeholder{
+    color: inherit;
+}
